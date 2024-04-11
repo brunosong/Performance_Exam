@@ -13,4 +13,15 @@ public class Exam1Controller {
     public String sample1(){
         return "Hello";
     }
+
+
+    @GetMapping("/sample2")
+    public String sample2(){
+        try {
+            Thread.sleep(500);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "Hello";
+    }
 }
